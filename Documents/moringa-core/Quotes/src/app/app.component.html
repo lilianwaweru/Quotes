@@ -1,8 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align:left">
   <h1>
-    Welcome to {{ title }}!
+    Welcome to QUOTES
   </h1>
+  <ul>
+    <h1><li *ngFor='let quote of quotes'>{{quote.name}}</li></h1>
+  </ul>
+  
   
 
 <router-outlet></router-outlet>
