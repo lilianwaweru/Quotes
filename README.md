@@ -1,5 +1,5 @@
 # Quotes
-
+This is an angular app that will ......
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Development server
