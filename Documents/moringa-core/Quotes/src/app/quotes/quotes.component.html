@@ -1,3 +1,10 @@
-<p>
-  quotes works!
-</p>
+<h1>
+  quotes!
+</h1>
+<ul>
+  <div *ngFor='let quote of quotes ;let i = index'>
+    <li>{{quote.name}}</li>
+    <button (click)='toogleDetails(i)'>Toogle Details</button>
+    <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'quoteComplete($event,i)'></app-quotes-details>
+  </div>
+</ul>
