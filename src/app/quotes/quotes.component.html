@@ -5,15 +5,16 @@
 </h1>
 <div class = "container">
   <div class="row">
-    <app-quote-form></app-quote-form>
+  <div class="col-md-6">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
-
+<div class="col-md-6">
   <div *ngFor='let quote of quotes ;let i = index'>
-    <div class = "col-md-2">
-      <div class="row">
-    <p> <em>{{quote.name}} </em></p>
+      <div class="">
+    <p> <em>{{quote.text}} </em></p>
     <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
     <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
   </div>  
+</div>
 </div>
 </div>
