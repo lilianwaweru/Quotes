@@ -1,10 +1,16 @@
 <h1>
-  quotes!
+  <div class = "jumborton">
+  Quotes!
+</div>
 </h1>
-<ul>
+<div class = "container">
+
   <div *ngFor='let quote of quotes ;let i = index'>
-    <li> <em>{{quote.name}} </em></li>
-    <button (click)='toogleDetails(i)'>Toogle Details</button>
+    <div class = "col-md-2">
+      <div class="row">
+    <p> <em>{{quote.name}} </em></p>
+    <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
     <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
-  </div>
-</ul>
+  </div>  
+</div>
+</div>
