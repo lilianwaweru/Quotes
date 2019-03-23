@@ -12,6 +12,16 @@ export class QuotesComponent implements OnInit {
     new Quotes(3, 'yes am here', 'Author:waweru', 'Publisher:his', new Date(2019,3,22)),
   ]
 
+  deleteQuote(isComplete, index){
+    if (isComplete){
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}`)
+
+      if(toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
   quoteComplete(isComplete,index){
     if (isComplete){
       this.quotes.splice(index,1);
