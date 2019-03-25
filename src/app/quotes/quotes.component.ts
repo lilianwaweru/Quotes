@@ -7,9 +7,9 @@ import {Quotes} from '../quotes'
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quotes(1, 'here i am', 'Author:njuguna', 'Publisher:her', new Date(2019,3,22)),
-    new Quotes(2, 'where are you', 'Author:muthoni', 'Publisher:his', new Date(2019,3,22)),
-    new Quotes(3, 'yes am here', 'Author:waweru', 'Publisher:his', new Date(2019,3,22)),
+    new Quotes(1, 'The grass is greener where you water it', 'Author:Neil Barrigham', 'Publisher:lilian', new Date(2019,3,22),0,0),
+    new Quotes(2, 'It always seems impossible until it done', 'Author:Nelson Mandela', 'Publisher:lilian', new Date(2019,3,22),0,0),
+    new Quotes(3, 'Education is the most powerful weapon which you can use to change the world', 'Author:Nelson Mandela', 'Publisher:his', new Date(2019,3,22),0,0),
   ]
 
   addNewQuote(quote){
@@ -38,7 +38,17 @@ export class QuotesComponent implements OnInit {
   toogleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+  thumbsUp(upvote,index){
+    if(upvote){
+      this.quotes[index].upVote +=1;
+    }
+  }
 
+  thumbsDown(downvoting,index){
+    if(downvoting){
+      this.quotes[index].downVote -=1;
+    }
+  }
   constructor() { }
 
   ngOnInit() {

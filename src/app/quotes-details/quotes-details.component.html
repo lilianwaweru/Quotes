@@ -9,7 +9,21 @@
     {{quote.completeDate|date}}
 </p>
     <!-- {{quote.text}} -->
-
+<div class="container">
+    
 <p>This quote will be completed in {{quote.completeDate|dateCount}} days</p>
-<button class ="btn btn-danger" (click)='quoteDelete(true)'>Delete Quote</button>
-<!-- <button (click) = 'quoteComplete(true)'>Delete</button> -->
+<div class="row">
+    <div class="col-md-4">
+            <button class ="btn btn-danger" (click)='quoteDelete(true)'>Delete Quote</button>
+            
+    </div>
+    <div class="col-md-4">
+            <button class="btn btn-success" (click)='thumbsUp(true)'>Upvote</button><span>{{quote.upVote}}</span> 
+        </div>   
+    <div class="col-md-4">
+            <button class="btn btn-warning" (click)='thumbsDown(true)'>DownVote</button><span>{{quote.downVote}}</span>
+        </div>
+    
+</div>
+</div>
+

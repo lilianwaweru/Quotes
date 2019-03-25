@@ -1,6 +1,6 @@
 <h1>
   <div class = "jumborton">
-  Quotes!
+  <h1>Quotes!</h1>
 </div>
 </h1>
 <div class = "container">
@@ -11,9 +11,9 @@
 <div class="col-md-6">
   <div *ngFor='let quote of quotes ;let i = index'>
       <div class="">
-    <p> <em>{{quote.text}} </em></p>
+    <p> <strong>{{quote.text}} </strong></p>
     <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
-    <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
+    <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (upVote)='thumbsUp($event,i)' (downVote)='thumbsDown($event,i)' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
   </div>  
 </div>
 </div>
