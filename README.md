@@ -42,3 +42,18 @@ Use the following commands to use this project.
 | When you click the upvote button   | It is going to add the number of votes                  |
 | When you click the downvote button | It is going to deduct the number of votes              |
 
+## Contact 
+You can contact me via slack(lilian waweru) or email me at lilowesh.lw@gmail.com.
+
+## Link To The site
+Click on this link for the live demo
+
+## Technologies Used
+1.Angular
+
+2.Bootstrap
+
+3.Typescript
+
+## License
+MIT Copyright (c) 2019 Lilian Waweru
