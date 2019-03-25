@@ -36,3 +36,9 @@ Use the following commands to use this project.
 - atom .  //For those using atom text editor.
 - code .  //For those using Visual Studio editor.
 ## BDD
+| Behaviour                          | Output                                                  |
+|------------------------------------|---------------------------------------------------------|
+| when you fill in your the form     | On click of ad quote,it will add your quote on the page |
+| When you click the upvote button   | It is going to add the number of votes                  |
+| When you click the downvote button | It is going to deduct the number of votes              |
+
