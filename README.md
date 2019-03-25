@@ -4,6 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Author
 [Lilian Muthoni waweru]()
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -27,3 +28,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### Project Setup instructions
+Use the following commands to use this project.
+- git clone :https://github.com/lilianwaweru/Quotes.git
+- cd Quotes
+- atom .  //For those using atom text editor.
+- code .  //For those using Visual Studio editor.
+## BDD
