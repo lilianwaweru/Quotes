@@ -1,6 +1,8 @@
 # Quotes
-This is an angular app that will ......
+This is an angular app that will enable a user to add or view a quote.the user can also vote for a quote.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+
+## Author
 
 ## Development server
 
