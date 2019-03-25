@@ -3,7 +3,14 @@ This is an angular app that will enable a user to add or view a quote.the user c
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Author
-[Lilian Muthoni waweru]()
+[Lilian Muthoni waweru](https://lilianwaweru.github.io/Quotes/)
+
+### Project Setup instructions
+Use the following commands to use this project.
+- git clone :https://github.com/lilianwaweru/Quotes.git
+- cd Quotes
+- atom .  //For those using atom text editor.
+- code .  //For those using Visual Studio editor.
 
 ## Development server
 
@@ -29,16 +36,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-### Project Setup instructions
-Use the following commands to use this project.
-- git clone :https://github.com/lilianwaweru/Quotes.git
-- cd Quotes
-- atom .  //For those using atom text editor.
-- code .  //For those using Visual Studio editor.
+
 ## BDD
 | Behaviour                          | Output                                                  |
 |------------------------------------|---------------------------------------------------------|
-| when you fill in your the form     | On click of ad quote,it will add your quote on the page |
+| when you fill in your the form     | On click of add quote,it will add your quote on the page |
 | When you click the upvote button   | It is going to add the number of votes                  |
 | When you click the downvote button | It is going to deduct the number of votes              |
 
@@ -46,7 +48,7 @@ Use the following commands to use this project.
 You can contact me via slack(lilian waweru) or email me at lilowesh.lw@gmail.com.
 
 ## Link To The site
-Click on this link for the live demo
+Click on this link for the live demo:https://lilianwaweru.github.io/Quotes/
 
 ## Technologies Used
 1.Angular
@@ -56,4 +58,5 @@ Click on this link for the live demo
 3.Typescript
 
 ## License
-MIT Copyright (c) 2019 Lilian Waweru
+[MIT](./LICENSE)
+Copyright (c) 2019 Lilian Waweru
